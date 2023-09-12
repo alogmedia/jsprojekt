@@ -1,11 +1,41 @@
+
+
 .bogimg {
     width:75%;
 }
 
+.text-container{
+    margin-top:500px;
+}
+
+.text-container > h2{
+    font-size:15px;
+    font-weight:bold;
+}
+
+.pris{
+    font-weight:bold;
+    font-size:15px;
+    margin-top:5px;
+}
+.fordel{
+    color:#c51924;
+}
+
+.excla{
+    filter: invert(13%) sepia(85%) saturate(3987%) hue-rotate(347deg) brightness(101%) contrast(94%);
+}
+
+.image-container {
+    position: absolute;
+    width: 180px;
+}
+
+
 .slider-container{
     position: relative;
     overflow-x: hidden;
-    height: 300px;
+    height: 500px;
 }
 .slider-width{
     position: absolute;
@@ -21,13 +51,10 @@
     justify-content: center;
     align-items: center;
     width: 180px;
-    height: 250px;
+    height: 300px;
     background: #f2f2f2;
     margin: 0 10px;
-    color: #fff;
     text-align: center;
-    font-size: 40px;
-    font-weight: 800;
 }
 
 .stars {
@@ -37,29 +64,99 @@
     align-items: center;
 }
 
-.next{
-   background: rgb(245 24 24);
-   border: none;
-   outline: none;
-   color: #fff;
-   font-size: 20px;
-   cursor: pointer;
-   position: relative;
-   left:100%;
-   transform: translate(-50%);
-}
-.prev{
-    background: rgb(245 24 24);
-    border: none;
-    outline: none;
-    color: #fff;
-    font-size: 20px;
+/* Move the previous button to the left */
+.prev {
+    background: #222;
     cursor: pointer;
-    position: relative;
-    transform: translate(-50%);
-    float:left;
+    position: absolute; /* Change position to absolute */
+    border-radius: 20px;
+    height: 40px;
+    left: 10px; /* Adjust the left position as needed */
+    top: 55%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
+}
+
+/* Move the next button to the right */
+.next {
+    background: #222;
+    cursor: pointer;
+    position: absolute; /* Change position to absolute */
+    border-radius: 20px;
+    height: 40px;
+    right: 10px; /* Adjust the right position as needed */
+    top: 55%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
+}
+
+
+ .pre {
+    filter: invert(99%) sepia(6%) saturate(23%) hue-rotate(75deg) brightness(103%) contrast(100%);
  }
+.nex {
+    filter: invert(99%) sepia(6%) saturate(23%) hue-rotate(75deg) brightness(103%) contrast(100%);
+}
 
 #btn:nth-child(2){
    margin-left: -74px;
 }
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.2); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    width:100%;
+    height:100%;
+    opacity:0;
+  }
+  
+  .close:hover,
+  .close:focus {
+
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }

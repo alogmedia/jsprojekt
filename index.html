@@ -638,41 +638,6 @@ Aktuelt </p>
 <div id="main_page_top_banner"></div><script type="6c555346d3679de150e544bf-text/javascript">$(document).ready(function(){ $('#main_page_top_banner').append('<div class="banner-placeholder"></div>'); $('#main_page_top_banner').load('/dk/dynamicbanners/renderbannerasync?alias=main_page_top_banner', function(){  siteJsPromise.then(function(){$.AttachSaxoSlick();}); });});</script><div id="main_page_top_banner_split" style="display: flex;"></div><script type="6c555346d3679de150e544bf-text/javascript">$(document).ready(function(){ $('#main_page_top_banner_split').append(''); $('#main_page_top_banner_split').load('/dk/dynamicbanners/renderbannerasync?alias=main_page_top_banner_split_desktop&isSplitBanner=True', function(){  siteJsPromise.then(function(){$.AttachSaxoSlick();}); });});</script>
 <img src="images/header.PNG">
 <article class="container">
-<h2 class="headline">Mest solgte bøger</h2>
-<div class="slider-container" item-display-d="6" item-display-t="5" item-display-m="1">
-    <div class="slider-width">
-        <div class="item">
-            <div class="image-container">
-                <img class="bogimg" src="images/bog1.png">
-                <img class="stars" src="images/stars.PNG">
-            </div>
-        </div>
-            <div class="item">
-                <div class="image-container">
-                    <img class="bogimg" src="images/bog2.png">
-                    <img class="stars" src="images/stars.PNG">
-                </div>
-        </div>
-        <div class="item">
-            <div class="image-container">
-                <img class="bogimg" src="images/bog3.png">
-                <img class="stars" src="images/stars.PNG">
-            </div>
-        </div>
-        <div class="item"><img class="bogimg" src="images/bog4.png"></div>
-        <div class="item"><img class="bogimg" src="images/bog5.png"></div>
-        <div class="item"><img class="bogimg" src="images/bog6.png"></div>
-        <div class="item"><img class="bogimg" src="images/bog7.png"></div>
-        <div class="item"><img class="bogimg" src="images/bog8.png"></div>
-        <div class="item"><img class="bogimg" src="images/bog9.png"></div>
-        <div class="item"><img class="bogimg" src="images/bog10.png"></div>
-        <div class="item"><img class="bogimg" src="images/bog11.png"></div>
-        <div class="item"><img class="bogimg" src="images/bog12.png"></div>
-    </div>
-</div>
-<button type="button" class="prev" onclick="prev()">Prev</button>
-<button type="button" class="next" onclick="next()">Next</button>
-<script src="js/script.js"></script>
 <ul class="infographics-container">
 <li>
 <img src="https://imgcdn.saxo.com/image/10148036" width="50" height="50">
@@ -704,6 +669,201 @@ Aktuelt </p>
 </a>
 </li>
 </ul>
+<h2 class="headline">Mest solgte bøger</h2>
+<div class="slider-container" item-display-d="6" item-display-t="5" item-display-m="1">
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="popupimage">
+  </div>
+    <div class="slider-width">
+        <div class="item">
+            <div class="image-container">
+                <img class="bogimg" src="images/bog1.png">
+                <img class="stars" src="images/stars.PNG">
+            </div>
+            <div class="text-container">
+                <h2>Jeg anerkender ikke læ…</h2>
+                <ul><li>Anette Harbech Olesen</li>
+                <li>Bog, indbundet</li>
+                <li class="pris">kr. 239,95</li>
+                <li class="fordel">kr. 209,95 <br> med Shopping-fordele<img class="excla" src="images/exclamationmark.svg"></li></ul>
+                <button type="button" id="popBtn1" class="btn btn--red-outline btn--extra-large btn--cart" onclick="" tabindex="0">Læg i kurv</button>
+            </div>
+        </div>
+
+            <div class="item">
+                <div class="image-container">
+                    <img class="bogimg" src="images/bog2.png">
+                    <img class="stars" src="images/stars.PNG">
+                </div>
+                <div class="text-container">
+                    <h2>Jeg anerkender ikke læ…</h2>
+                    <ul><li>Anette Harbech Olesen</li>
+                    <li>Bog, indbundet</li>
+                    <li class="pris">kr. 239,95</li>
+                    <li class="fordel">kr. 209,95 <br> med Shopping-fordele<img class="excla" src="images/exclamationmark.svg"></li></ul>
+                    <button type="button" id="popBtn2" class="btn btn--red-outline btn--extra-large btn--cart" onclick="" tabindex="0">Læg i kurv</button>
+
+                </div>
+        </div>
+        <div class="item">
+            <div class="image-container">
+                <img class="bogimg" src="images/bog3.png">
+                <img class="stars" src="images/stars.PNG">
+            </div>
+            <div class="text-container">
+                <h2>Jeg anerkender ikke læ…</h2>
+                <ul><li>Anette Harbech Olesen</li>
+                <li>Bog, indbundet</li>
+                <li class="pris">kr. 239,95</li>
+                <li class="fordel">kr. 209,95 <br> med Shopping-fordele<img class="excla" src="images/exclamationmark.svg"></li></ul>
+                <button type="button" id="popBtn3" class="btn btn--red-outline btn--extra-large btn--cart" onclick="" tabindex="0">Læg i kurv</button>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-container">
+                <img class="bogimg" src="images/bog4.png">
+                <img class="stars" src="images/stars.PNG">
+            </div>
+            <div class="text-container">
+                <h2>Jeg anerkender ikke læ…</h2>
+                <ul><li>Anette Harbech Olesen</li>
+                <li>Bog, indbundet</li>
+                <li class="pris">kr. 239,95</li>
+                <li class="fordel">kr. 209,95 <br> med Shopping-fordele<img class="excla" src="images/exclamationmark.svg"></li></ul>
+                <button type="button" id="popBtn4" class="btn btn--red-outline btn--extra-large btn--cart" onclick="" tabindex="0">Læg i kurv</button>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-container">
+                <img class="bogimg" src="images/bog5.png">
+                <img class="stars" src="images/stars.PNG">
+            </div>
+            <div class="text-container">
+                <h2>Jeg anerkender ikke læ…</h2>
+                <ul><li>Anette Harbech Olesen</li>
+                <li>Bog, indbundet</li>
+                <li class="pris">kr. 239,95</li>
+                <li class="fordel">kr. 209,95 <br> med Shopping-fordele<img class="excla" src="images/exclamationmark.svg"></li></ul>
+                <button type="button" id="popBtn5" class="btn btn--red-outline btn--extra-large btn--cart" onclick="" tabindex="0">Læg i kurv</button>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-container">
+                <img class="bogimg" src="images/bog6.png">
+                <img class="stars" src="images/stars.PNG">
+            </div>
+            <div class="text-container">
+                <h2>Jeg anerkender ikke læ…</h2>
+                <ul><li>Anette Harbech Olesen</li>
+                <li>Bog, indbundet</li>
+                <li class="pris">kr. 239,95</li>
+                <li class="fordel">kr. 209,95 <br> med Shopping-fordele<img class="excla" src="images/exclamationmark.svg"></li></ul>
+                <button type="button" id="popBtn6" class="btn btn--red-outline btn--extra-large btn--cart" onclick="" tabindex="0">Læg i kurv</button>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-container">
+                <img class="bogimg" src="images/bog7.png">
+                <img class="stars" src="images/stars.PNG">
+            </div>
+            <div class="text-container">
+                <h2>Jeg anerkender ikke læ…</h2>
+                <ul><li>Anette Harbech Olesen</li>
+                <li>Bog, indbundet</li>
+                <li class="pris">kr. 239,95</li>
+                <li class="fordel">kr. 209,95 <br> med Shopping-fordele<img class="excla" src="images/exclamationmark.svg"></li></ul>
+                <button type="button" id="popBtn7" class="btn btn--red-outline btn--extra-large btn--cart" onclick="" tabindex="0">Læg i kurv</button>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-container">
+                <img class="bogimg" src="images/bog8.png">
+                <img class="stars" src="images/stars.PNG">
+            </div>
+            <div class="text-container">
+                <h2>Jeg anerkender ikke læ…</h2>
+                <ul><li>Anette Harbech Olesen</li>
+                <li>Bog, indbundet</li>
+                <li class="pris">kr. 239,95</li>
+                <li class="fordel">kr. 209,95 <br> med Shopping-fordele<img class="excla" src="images/exclamationmark.svg"></li></ul>
+                <button type="button" id="popBtn8" class="btn btn--red-outline btn--extra-large btn--cart" onclick="" tabindex="0">Læg i kurv</button>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-container">
+                <img class="bogimg" src="images/bog9.png">
+                <img class="stars" src="images/stars.PNG">
+            </div>
+            <div class="text-container">
+                <h2>Jeg anerkender ikke læ…</h2>
+                <ul><li>Anette Harbech Olesen</li>
+                <li>Bog, indbundet</li>
+                <li class="pris">kr. 239,95</li>
+                <li class="fordel">kr. 209,95 <br> med Shopping-fordele<img class="excla" src="images/exclamationmark.svg"></li></ul>
+                <button type="button" id="popBtn9" class="btn btn--red-outline btn--extra-large btn--cart" onclick="" tabindex="0">Læg i kurv</button>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-container">
+                <img class="bogimg" src="images/bog10.png">
+                <img class="stars" src="images/stars.PNG">
+            </div>
+            <div class="text-container">
+                <h2>Jeg anerkender ikke læ…</h2>
+                <ul><li>Anette Harbech Olesen</li>
+                <li>Bog, indbundet</li>
+                <li class="pris">kr. 239,95</li>
+                <li class="fordel">kr. 209,95 <br> med Shopping-fordele<img class="excla" src="images/exclamationmark.svg"></li></ul>
+                <button type="button" id="popBtn10" class="btn btn--red-outline btn--extra-large btn--cart" onclick="" tabindex="0">Læg i kurv</button>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-container">
+                <img class="bogimg" src="images/bog11.png">
+                <img class="stars" src="images/stars.PNG">
+            </div>
+            <div class="text-container">
+                <h2>Jeg anerkender ikke læ…</h2>
+                <ul><li>Anette Harbech Olesen</li>
+                <li>Bog, indbundet</li>
+                <li class="pris">kr. 239,95</li>
+                <li class="fordel">kr. 209,95 <br> med Shopping-fordele<img class="excla" src="images/exclamationmark.svg"></li></ul>
+                <button type="button" id="popBtn11" class="btn btn--red-outline btn--extra-large btn--cart" onclick="" tabindex="0">Læg i kurv</button>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-container">
+                <img class="bogimg" src="images/bog12.png">
+                <img class="stars" src="images/stars.PNG">
+            </div>
+            <div class="text-container">
+                <h2>Jeg anerkender ikke læ…</h2>
+                <ul><li>Anette Harbech Olesen</li>
+                <li>Bog, indbundet</li>
+                <li class="pris">kr. 239,95</li>
+                <li class="fordel">kr. 209,95 <br> med Shopping-fordele<img class="excla" src="images/exclamationmark.svg"></li></ul>
+                <button type="button" id="popBtn12" class="btn btn--red-outline btn--extra-large btn--cart" onclick="" tabindex="0">Læg i kurv</button>
+
+            </div>
+        </div>
+
+    </div>
+    <button type="button" class="prev" onclick="tilbage()"><img class="pre" src="images/left.svg"></button>
+<button type="button" class="next" onclick="frem()"><img class="nex" src="images/right.svg"></button>
+</div>
+<script src="js/slider.js"></script>
+<script src="js/popup.js"></script>
 <div class="main">
 <div class="content content--sidebar">
 <div id="recommendations-container"></div><script type="6c555346d3679de150e544bf-text/javascript">$(document).ready(function(){ $('#recommendations-container').append('<div style="margin-bottom: 82px;" class="slider-placeholder"></div>'); $('#recommendations-container').load('/dk/dynamicbanners/renderbannerasync?alias=main_page_recommendations_banner', function(){  siteJsPromise.then(function(){$.AttachSaxoSlick();}); setBestsellersHeight();});});</script> <div id="banner-container"></div><script type="6c555346d3679de150e544bf-text/javascript">$(document).ready(function(){ $('#banner-container').append('<div class="slider-placeholder"></div>'); $('#banner-container').load('/dk/dynamicbanners/renderbannerasync?alias=main_page_banner', function(){  siteJsPromise.then(function(){$.AttachSaxoSlick();}); setBestsellersHeight();});});</script>
