@@ -22,43 +22,30 @@ if (screen.width > 280 && screen.width < 700) {
     margen = elementVisning * 20;
 }
 
-// Hent alle elementer med klassen "item"
+// Hent alle elementer med class "item"
 let elementer = document.getElementsByClassName("item");
 let elementerTilbage = elementer.length % elementVisning; // Beregn resten af elementer, der ikke passer perfekt i visningen
 let elementSlider = Math.floor(elementer.length / elementVisning) - 1; // Beregn antallet af slider-elementer minus 1
 
 // Funktion til at gå til næste element
 function frem() {
-    if (inkrement !== elementSlider + elementerTilbage) {
-        if (inkrement == elementSlider) {
-            // Hvis vi er på den sidste "slide", og der er elementer tilbage, skal vi gå tilbage til den første "slide"
-            inkrement = inkrement + elementerTilbage;
-            antal = antal - (screen.width / elementVisning) * elementerTilbage;
-        }
-        else {
-            // Hvis vi ikke er på den sidste "slide", gå til næste "slide"
-            inkrement++;
-            antal = antal - screen.width;
-        }
-    }
+    if (antal == 0) {
+    antal = antal - screen.width;
     // Opdater sliderens position ved at ændre venstre margen
     slider.style.left = antal + "px";
+    } else {
+       return
+    }
 }
-
+    
 // Funktion til at gå til forrige element
 function tilbage() {
-    if (inkrement !== 0) {
-        if (inkrement == elementerTilbage) {
-            // Hvis vi er på den første "slide" og har elementer tilbage, gå til den sidste "slide"
-            inkrement = inkrement - elementerTilbage;
-            antal = antal + (screen.width / elementVisning) * elementerTilbage;
-        }
-        else {
-            // Hvis vi ikke er på den første "slide", gå til forrige "slide"
-            inkrement--;
-            antal = antal + screen.width;
-        }
+    if (antal == 0) {
+        return
+    } else {
+        antal = antal + screen.width;
+        console.log(antal);
+        // Opdater sliderens position ved at ændre venstre margen
+        slider.style.left = antal + "px";
     }
-    // Opdater sliderens position ved at ændre venstre margen
-    slider.style.left = antal + "px";
 }

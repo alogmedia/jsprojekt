@@ -640,41 +640,41 @@ Aktuelt </p>
 <article class="container">
 <ul class="infographics-container">
 <li>
-<img src="https://imgcdn.saxo.com/image/10148036" width="50" height="50">
+<img class="icon" src="https://imgcdn.saxo.com/image/10148036" width="50" height="50">
 <strong>Stort udvalg af b&#248;ger</strong>
 <span>V&#230;lg blandt mere end 10 millioner titler</span>
 </li>
 <li>
-<img src="https://imgcdn.saxo.com/image/10148037" width="50" height="50">
+<img class="icon" src="https://imgcdn.saxo.com/image/10148037" width="50" height="50">
 <strong>Fri fragt</strong>
 <span>Fri fragt til pakkeboks ved k&#248;b over kr. 499</span>
 </li>
 <li>
-<img src="https://imgcdn.saxo.com/image/10148038" width="50" height="50">
+<img class="icon" src="https://imgcdn.saxo.com/image/10148038" width="50" height="50">
 <strong>DK&#39;s hurtigste levering</strong>
 <span>1-2 hverdages levering p&#229; 40.000 titler</span>
 </li>
 <li>
 <a target="_self" href="https://support.saxo.com/hc/da/articles/360000362585">
-<img src="https://imgcdn.saxo.com/image/10148039" width="50" height="50">
+<img class="icon" src="https://imgcdn.saxo.com/image/10148039" width="50" height="50">
 <strong>Nem retur</strong>
 <span>Gratis retur ved udbetaling til gavekort</span>
 </a>
 </li>
 <li>
 <a target="_self" href="https://www.saxo.com/dk/premium">
-<img src="https://imgcdn.saxo.com/image/10153989" width="50" height="50">
+<img class="icon" src="https://imgcdn.saxo.com/image/10153989" width="50" height="50">
 <strong>Saxo Premium</strong>
 <span>Pr&#248;v 30 dage gratis, derefter 139,-/md.</span>
 </a>
 </li>
 </ul>
 <h2 class="headline">Mest solgte bøger</h2>
-<div class="slider-container" item-display-d="6" item-display-t="5" item-display-m="1">
+<div class="slider-container" item-display-d="7" item-display-t="2" item-display-m="1">
     <!-- The Modal -->
-<div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="popupimage">
+<div id="popUp" class="popUpclass">
+    <span class="close"></span>
+    <img class="popup-content" id="popupimage">
   </div>
     <div class="slider-width">
         <div class="item">
@@ -859,11 +859,12 @@ Aktuelt </p>
         </div>
 
     </div>
-    <button type="button" class="prev" onclick="tilbage()"><img class="pre" src="images/left.svg"></button>
+<button type="button" class="prev" onclick="tilbage()"><img class="pre" src="images/left.svg"></button>
 <button type="button" class="next" onclick="frem()"><img class="nex" src="images/right.svg"></button>
 </div>
-<script src="js/slider.js"></script>
+<script src="js/slider2.js"></script>
 <script src="js/popup.js"></script>
+<script src="js/icons.js"></script>
 <div class="main">
 <div class="content content--sidebar">
 <div id="recommendations-container"></div><script type="6c555346d3679de150e544bf-text/javascript">$(document).ready(function(){ $('#recommendations-container').append('<div style="margin-bottom: 82px;" class="slider-placeholder"></div>'); $('#recommendations-container').load('/dk/dynamicbanners/renderbannerasync?alias=main_page_recommendations_banner', function(){  siteJsPromise.then(function(){$.AttachSaxoSlick();}); setBestsellersHeight();});});</script> <div id="banner-container"></div><script type="6c555346d3679de150e544bf-text/javascript">$(document).ready(function(){ $('#banner-container').append('<div class="slider-placeholder"></div>'); $('#banner-container').load('/dk/dynamicbanners/renderbannerasync?alias=main_page_banner', function(){  siteJsPromise.then(function(){$.AttachSaxoSlick();}); setBestsellersHeight();});});</script>
