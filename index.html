@@ -683,7 +683,7 @@ Aktuelt </p>
                 <div class="star-rating"></div>
             </div>
             <div class="text-container">
-                <h2>Jeg anerkender ikke læ…</h2>
+                <h2 class="bognavn">Jeg anerkender ikke læ…</h2>
                 <ul><li>Anette Harbech Olesen</li>
                 <li>Bog, indbundet</li>
                 <li class="pris">kr. 239,95</li>
@@ -698,7 +698,7 @@ Aktuelt </p>
                     <div class="star-rating"></div>
                 </div>
                 <div class="text-container">
-                    <h2>Jeg anerkender ikke læ…</h2>
+                    <h2 class="bognavn">Jeg anerkender ikke læ…</h2>
                     <ul><li>Anette Harbech Olesen</li>
                     <li>Bog, indbundet</li>
                     <li class="pris">kr. 239,95</li>
@@ -713,7 +713,7 @@ Aktuelt </p>
                 <div class="star-rating"></div>
             </div>
             <div class="text-container">
-                <h2>Jeg anerkender ikke læ…</h2>
+                <h2 class="bognavn">Jeg anerkender ikke læ…</h2>
                 <ul><li>Anette Harbech Olesen</li>
                 <li>Bog, indbundet</li>
                 <li class="pris">kr. 239,95</li>
@@ -728,7 +728,7 @@ Aktuelt </p>
                 <div class="star-rating"></div>
             </div>
             <div class="text-container">
-                <h2>Jeg anerkender ikke læ…</h2>
+                <h2 class="bognavn">Jeg anerkender ikke læ…</h2>
                 <ul><li>Anette Harbech Olesen</li>
                 <li>Bog, indbundet</li>
                 <li class="pris">kr. 239,95</li>
@@ -743,7 +743,7 @@ Aktuelt </p>
                 <div class="star-rating"></div>
             </div>
             <div class="text-container">
-                <h2>Jeg anerkender ikke læ…</h2>
+                <h2 class="bognavn">Jeg anerkender ikke læ…</h2>
                 <ul><li>Anette Harbech Olesen</li>
                 <li>Bog, indbundet</li>
                 <li class="pris">kr. 239,95</li>
@@ -758,7 +758,7 @@ Aktuelt </p>
                 <div class="star-rating"></div>
             </div>
             <div class="text-container">
-                <h2>Jeg anerkender ikke læ…</h2>
+                <h2 class="bognavn">Jeg anerkender ikke læ…</h2>
                 <ul><li>Anette Harbech Olesen</li>
                 <li>Bog, indbundet</li>
                 <li class="pris">kr. 239,95</li>
@@ -773,7 +773,7 @@ Aktuelt </p>
                 <div class="star-rating"></div>
             </div>
             <div class="text-container">
-                <h2>Jeg anerkender ikke læ…</h2>
+                <h2 class="bognavn">Jeg anerkender ikke læ…</h2>
                 <ul><li>Anette Harbech Olesen</li>
                 <li>Bog, indbundet</li>
                 <li class="pris">kr. 239,95</li>
@@ -788,7 +788,7 @@ Aktuelt </p>
                 <div class="star-rating"></div>
             </div>
             <div class="text-container">
-                <h2>Jeg anerkender ikke læ…</h2>
+                <h2 class="bognavn">Jeg anerkender ikke læ…</h2>
                 <ul><li>Anette Harbech Olesen</li>
                 <li>Bog, indbundet</li>
                 <li class="pris">kr. 239,95</li>
@@ -803,7 +803,7 @@ Aktuelt </p>
                 <div class="star-rating"></div>
             </div>
             <div class="text-container">
-                <h2>Jeg anerkender ikke læ…</h2>
+                <h2 class="bognavn">Jeg anerkender ikke læ…</h2>
                 <ul><li>Anette Harbech Olesen</li>
                 <li>Bog, indbundet</li>
                 <li class="pris">kr. 239,95</li>
@@ -818,7 +818,7 @@ Aktuelt </p>
                 <div class="star-rating"></div>
             </div>
             <div class="text-container">
-                <h2>Jeg anerkender ikke læ…</h2>
+                <h2 class="bognavn">Jeg anerkender ikke læ…</h2>
                 <ul><li>Anette Harbech Olesen</li>
                 <li>Bog, indbundet</li>
                 <li class="pris">kr. 239,95</li>
@@ -833,7 +833,7 @@ Aktuelt </p>
                 <div class="star-rating"></div>
             </div>
             <div class="text-container">
-                <h2>Jeg anerkender ikke læ…</h2>
+                <h2 class="bognavn">Jeg anerkender ikke læ…</h2>
                 <ul><li>Anette Harbech Olesen</li>
                 <li>Bog, indbundet</li>
                 <li class="pris">kr. 239,95</li>
@@ -848,7 +848,7 @@ Aktuelt </p>
                 <div class="star-rating"></div>
             </div>
             <div class="text-container">
-                <h2>Jeg anerkender ikke læ…</h2>
+                <h2 class="bognavn">Jeg anerkender ikke læ…</h2>
                 <ul><li>Anette Harbech Olesen</li>
                 <li>Bog, indbundet</li>
                 <li class="pris">kr. 239,95</li>
@@ -862,8 +862,22 @@ Aktuelt </p>
 <button type="button" class="prev" onclick="tilbage()"><img class="pre" src="images/left.svg"></button>
 <button type="button" class="next" onclick="frem()"><img class="nex" src="images/right.svg"></button>
 </div>
+
+<h1 class="headline">Din Kurv</h1>
+<ul class="basket-items"></ul>
+<div class="timer">
+    <span id="timer" style="display: none">10:00</span>
+</div>
+
+<h1 class="headline">Ønskeliste</h1>
+    <input type="text" id="taskInput" placeholder="Skriv navn på bog">
+    <button class="wishBtn" onclick="addTask()">Tilføj</button>
+    <ul id="taskList">
+    </ul>
+
+<script src="js/basket.js"></script>
+<script src="js/wish.js"></script>
 <script src="js/slider2.js"></script>
-<script src="js/popup.js"></script>
 <script src="js/rating.js"></script>
 <div class="main">
 <div class="content content--sidebar">

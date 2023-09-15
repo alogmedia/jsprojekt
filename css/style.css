@@ -171,3 +171,49 @@
       width: 100%;
     }
   }
+
+  /* Ønskeliste */
+  #taskInput {
+    border-radius: 5px;
+    height:30px;
+  }
+
+.wishBtn {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  height: 32px;
+  padding: 0 24px;
+  border-radius: 6px;
+  font-family: Lato,sans-serif;
+  max-width: 100%;
+  border: 2px solid transparent;
+  gap: 8px;
+  border-color: #c51924;
+  color: #c51924;
+  background-color: #fff;
+  display:flex;
+  margin-top:5px;
+}
+
+.wishDelete {
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 700;
+  height: 18px;;
+  padding: 0 24px;
+  border-radius: 6px;
+  font-family: Lato,sans-serif;
+  max-width: 100%;
+  border: 2px solid transparent;
+  gap: 8px;
+  border-color: #c51924;
+  color: #c51924;
+  background-color: #fff;
+  display:flex;
+  margin-top:5px;
+}
+
+.timer {
+  margin-top: 10px;
+}

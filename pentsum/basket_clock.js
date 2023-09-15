@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const addToBasketButtons = document.querySelectorAll(".add-to-basket");
+    const addToBasketButtons = document.querySelectorAll(".btn--cart");
     const basketItems = document.querySelector(".basket-items");
     const timer = document.getElementById("timer");
 

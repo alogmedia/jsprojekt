@@ -29,10 +29,12 @@ function updateTaskList() {
     for (let i = 0; i < tasks.length; i++) {
         const taskItem = document.createElement('li');
         taskItem.textContent = tasks[i];
+        taskItem.className = "pris";
 
         // Add a delete button to each task
         const deleteButton = document.createElement('button');
-        deleteButton.textContent = 'Delete';
+        deleteButton.textContent = 'Slet Ønske';
+        deleteButton.className = "wishDelete"
         deleteButton.addEventListener('click', function () {
             deleteTask(i);
         });
