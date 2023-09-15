@@ -217,3 +217,43 @@
 .timer {
   margin-top: 10px;
 }
+
+/* Lina */
+
+.bestSell {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.bestheadline {
+  font-weight:bold;
+  font-size: 24px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-bottom: 42%;
+}
+/* Add CSS for the image container */
+#imageContainer {
+  display: flex;
+  float:left;
+  max-width: 250px; /* Set the max width to control the width of the displayed image */
+  margin: 0 auto;
+  overflow-y: scroll; /* Enable vertical scrolling */
+  max-height: 580px; /* Set a maximum height for the container */
+  border: 1px solid #ddd;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+#imageContainer::-webkit-scrollbar{
+  display: none;
+}
+
+/* Style for individual images */
+.image {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd; /* Add a separator line between images */
+}
+

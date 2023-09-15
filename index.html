@@ -861,8 +861,9 @@ Aktuelt </p>
     </div>
 <button type="button" class="prev" onclick="tilbage()"><img class="pre" src="images/left.svg"></button>
 <button type="button" class="next" onclick="frem()"><img class="nex" src="images/right.svg"></button>
-</div>
+ <!-- Image container -->
 
+</div>
 <h1 class="headline">Din Kurv</h1>
 <ul class="basket-items"></ul>
 <div class="timer">
@@ -875,7 +876,13 @@ Aktuelt </p>
     <ul id="taskList">
     </ul>
 
+    <div class="bestSell">
+    <div id="imageContainer">
+        <div id="imageGrid"></div>
+    </div> 
+    </div   
 <script src="js/basket.js"></script>
+<script src="js/imgScroll.js"></script>
 <script src="js/wish.js"></script>
 <script src="js/slider2.js"></script>
 <script src="js/rating.js"></script>
