@@ -1,0 +1,17 @@
+/* Add CSS for the image container */
+#imageContainer {
+    max-width: 250px; /* Set the max width to control the width of the displayed image */
+    margin: 0 auto;
+    overflow-y: scroll; /* Enable vertical scrolling */
+    max-height: 580px; /* Set a maximum height for the container */
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Style for individual images */
+  .image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd; /* Add a separator line between images */
+  }
+  
