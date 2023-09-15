@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Basket with Timer</title>
+    <link rel="stylesheet" href="css/basket_clock.css">
+    <script src="basket_clock.html" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping Basket</h1>
+        <div class="items">
+            <div class="item">
+                <span class="item-name">bog 1:</span>
+                <span class="item-price">200 kr.</span>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+            <div class="item">
+                <span class="item-name">bog 2:</span>
+                <span class="item-price">150 kr.</span>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+            <!-- Add more items here -->
+        </div>
+        <div class="basket">
+            <h2>Your Basket</h2>
+            <ul class="basket-items">
+                <!-- Items added to the basket will appear here -->
+            </ul>
+            <div class="timer">
+                <h3>Time Remaining:</h3>
+                <span id="timer">10:00</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
